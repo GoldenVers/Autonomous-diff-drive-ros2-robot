@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
 
-    <xacro:include filename="robot_core.xacro" />
+    <xacro:include filename="robot_core.xacro" /> 
 
 
    <!--gazebo diff drive plugin--> 
@@ -29,10 +29,19 @@
             <publish_wheel_tf>true</publish_wheel_tf>
 
         </plugin>
+
+        
     </gazebo>
+
+    
+
+
+
+
     
 </robot>
 
 
-<!--  the reason for the above plugin to be here is because it is not working using the old method, xacro is not able to read the gazebo plugin, althought it is reading the core.xacro file 
-    -->
+
+
+<!-- the reason why the plugins are here because for some reason it is not able to read from a separate file even though the core urdf is read. I dont know why this is happening but I aint got time for this now -->
