@@ -1,0 +1,44 @@
+#okay, so far what have we done?
+# we have modified the code to run with gazebo classic instead of ignition and the reason is ignition is so bad, I had to work with the raw sdf files to add the plugins and the lidar plugin was very tiring to add, it was time consuming
+# and I had to run into loops of debugging
+#now that we are good to go, so far we are able to run it in gazebo and rviz2, then control it with the teleop_twist_keyboard package 
+#the include tag in the robot.urdf.xacro file is not really working, it just takes the main core file and dont take the others. 
+#I had to add the lidar plugins manually 
+#the lidar work this way: you add the lidar joint in the core.xacro and then in the gazebo tag you have to add the sensor and the plugin things
+#it was not working initially and this is due to some deprecation, <argument>~/out:=scan</argument> is replaced with <remapping>~/out:=scan</remapping>
+ # <visualise> tag should be true and not false if you want to see the rays in gazebo
+#thats it for gazebo, here is the commands steps
+# 1. ros2 launch articubot_one launch_sim.launch.py
+# 2. ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+# 3. ros2 run rviz2 
+
+# 4. add the robot model and the laser scan
+# 5. add the laser scan topic and the robot model
+# 6. main frame is odom
+
+
+
+20/04/2025
+
+I have added the camera system and it ran smoothly, I have also added the depth camera system and it ran smoothly as well, the main difference between both is the depth camera will have plugin type of "depth" and camera controller extra 
+tags like the min fram and max frame.
+
+the theory is okay but it definitely needs to have more study, recommendation is to rewatch the video when he explains the theory and read documentations regarding that topic 
+
+
+depth camera plugin documentation : https://classic.gazebosim.org/tutorials?tut=ros_depth_camera
+normal camera plugin documentation : https://classic.gazebosim.org/tutorials?tut=ros_gzplugins
+
+gazebo classic is simply better, more direct and easier to handle gazebo ignition. 
+
+
+what are the commands, 
+
+same as before, launch_sim.py command, then rviz2. in rviz2 image topic should be added to see the results, and also rqt-image-view, now you run ros2 run rqt_image_view rqt_image_view this will show the uncompressed image and the compresed
+this is needed as rviz is not able to show the uncompressed images from the camera. 
+
+IRL, the following is used so that you can republish the compressed images as uncompressed in a another topic, 
+    ros2 run image_transport republish compressed raw --ros-args -r in/compressed:=/camera/image_raw/compresed -r out:=/camera/image_raw/uncompressed 
+
+this will take the compressed image published by gazebo and then uncompress it to the topic, camera/image_raw/uncompressed 
+useful if you want to send the data, uncompress it over the network and uncompress it on the other end.
