@@ -1,0 +1,372 @@
+[0.000000] (-) TimerEvent: {}
+[0.000610] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.000875] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.099424] (-) TimerEvent: {}
+[0.199639] (-) TimerEvent: {}
+[0.271320] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.299751] (-) TimerEvent: {}
+[0.351960] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/articubot_one', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one'], 'cwd': '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/999/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2373,unix/ubuntu:/tmp/.ICE-unix/2373'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb87e982_3a5b_48ec_8c0a_8aa8fd5c50fa'), ('XDG_RUNTIME_DIR', '/run/user/999'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/999/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/999/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/my_bot:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set:/home/ubuntu/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_timer:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_cbg_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_async_client:/home/ubuntu/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/999/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ros2_ws/build/launch_testing_examples:/home/ubuntu/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_executors:/home/ubuntu/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/my_bot:/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set:/home/ubuntu/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_timer:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_cbg_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_async_client:/home/ubuntu/ros2_ws/install/articubot_one:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble')]), 'shell': False}
+[0.399883] (-) TimerEvent: {}
+[0.512133] (-) TimerEvent: {}
+[0.613040] (-) TimerEvent: {}
+[0.713316] (-) TimerEvent: {}
+[0.813672] (-) TimerEvent: {}
+[0.913999] (-) TimerEvent: {}
+[1.014275] (-) TimerEvent: {}
+[1.114575] (-) TimerEvent: {}
+[1.214838] (-) TimerEvent: {}
+[1.315113] (-) TimerEvent: {}
+[1.415362] (-) TimerEvent: {}
+[1.507942] (articubot_one) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.515474] (-) TimerEvent: {}
+[1.615674] (-) TimerEvent: {}
+[1.715893] (-) TimerEvent: {}
+[1.816137] (-) TimerEvent: {}
+[1.916425] (-) TimerEvent: {}
+[2.016699] (-) TimerEvent: {}
+[2.117011] (-) TimerEvent: {}
+[2.217270] (-) TimerEvent: {}
+[2.317565] (-) TimerEvent: {}
+[2.417790] (-) TimerEvent: {}
+[2.518046] (-) TimerEvent: {}
+[2.618284] (-) TimerEvent: {}
+[2.718530] (-) TimerEvent: {}
+[2.818811] (-) TimerEvent: {}
+[2.919192] (-) TimerEvent: {}
+[3.019458] (-) TimerEvent: {}
+[3.119698] (-) TimerEvent: {}
+[3.219951] (-) TimerEvent: {}
+[3.320232] (-) TimerEvent: {}
+[3.420628] (-) TimerEvent: {}
+[3.520869] (-) TimerEvent: {}
+[3.621330] (-) TimerEvent: {}
+[3.721728] (-) TimerEvent: {}
+[3.822148] (-) TimerEvent: {}
+[3.922538] (-) TimerEvent: {}
+[4.023031] (-) TimerEvent: {}
+[4.123457] (-) TimerEvent: {}
+[4.223961] (-) TimerEvent: {}
+[4.324496] (-) TimerEvent: {}
+[4.424722] (-) TimerEvent: {}
+[4.525013] (-) TimerEvent: {}
+[4.625448] (-) TimerEvent: {}
+[4.725875] (-) TimerEvent: {}
+[4.826379] (-) TimerEvent: {}
+[4.926748] (-) TimerEvent: {}
+[5.027098] (-) TimerEvent: {}
+[5.127489] (-) TimerEvent: {}
+[5.227772] (-) TimerEvent: {}
+[5.328045] (-) TimerEvent: {}
+[5.428338] (-) TimerEvent: {}
+[5.528681] (-) TimerEvent: {}
+[5.629080] (-) TimerEvent: {}
+[5.729365] (-) TimerEvent: {}
+[5.829709] (-) TimerEvent: {}
+[5.929962] (-) TimerEvent: {}
+[6.030228] (-) TimerEvent: {}
+[6.130612] (-) TimerEvent: {}
+[6.230862] (-) TimerEvent: {}
+[6.331130] (-) TimerEvent: {}
+[6.431372] (-) TimerEvent: {}
+[6.531617] (-) TimerEvent: {}
+[6.631833] (-) TimerEvent: {}
+[6.732072] (-) TimerEvent: {}
+[6.832330] (-) TimerEvent: {}
+[6.932715] (-) TimerEvent: {}
+[7.032974] (-) TimerEvent: {}
+[7.133229] (-) TimerEvent: {}
+[7.233604] (-) TimerEvent: {}
+[7.333854] (-) TimerEvent: {}
+[7.434111] (-) TimerEvent: {}
+[7.534369] (-) TimerEvent: {}
+[7.634643] (-) TimerEvent: {}
+[7.734911] (-) TimerEvent: {}
+[7.835294] (-) TimerEvent: {}
+[7.935519] (-) TimerEvent: {}
+[8.035775] (-) TimerEvent: {}
+[8.136208] (-) TimerEvent: {}
+[8.236591] (-) TimerEvent: {}
+[8.336846] (-) TimerEvent: {}
+[8.437104] (-) TimerEvent: {}
+[8.537422] (-) TimerEvent: {}
+[8.637725] (-) TimerEvent: {}
+[8.738141] (-) TimerEvent: {}
+[8.838493] (-) TimerEvent: {}
+[8.938767] (-) TimerEvent: {}
+[9.039283] (-) TimerEvent: {}
+[9.139809] (-) TimerEvent: {}
+[9.240288] (-) TimerEvent: {}
+[9.340851] (-) TimerEvent: {}
+[9.441449] (-) TimerEvent: {}
+[9.541833] (-) TimerEvent: {}
+[9.642309] (-) TimerEvent: {}
+[9.742599] (-) TimerEvent: {}
+[9.842865] (-) TimerEvent: {}
+[9.943108] (-) TimerEvent: {}
+[10.043438] (-) TimerEvent: {}
+[10.143708] (-) TimerEvent: {}
+[10.244104] (-) TimerEvent: {}
+[10.344382] (-) TimerEvent: {}
+[10.444628] (-) TimerEvent: {}
+[10.544871] (-) TimerEvent: {}
+[10.645121] (-) TimerEvent: {}
+[10.745389] (-) TimerEvent: {}
+[10.845639] (-) TimerEvent: {}
+[10.945966] (-) TimerEvent: {}
+[11.046261] (-) TimerEvent: {}
+[11.146688] (-) TimerEvent: {}
+[11.247096] (-) TimerEvent: {}
+[11.347498] (-) TimerEvent: {}
+[11.447871] (-) TimerEvent: {}
+[11.548294] (-) TimerEvent: {}
+[11.648992] (-) TimerEvent: {}
+[11.749863] (-) TimerEvent: {}
+[11.850445] (-) TimerEvent: {}
+[11.950697] (-) TimerEvent: {}
+[12.051078] (-) TimerEvent: {}
+[12.151537] (-) TimerEvent: {}
+[12.251898] (-) TimerEvent: {}
+[12.352171] (-) TimerEvent: {}
+[12.452604] (-) TimerEvent: {}
+[12.552913] (-) TimerEvent: {}
+[12.653188] (-) TimerEvent: {}
+[12.753457] (-) TimerEvent: {}
+[12.853695] (-) TimerEvent: {}
+[12.953972] (-) TimerEvent: {}
+[13.054343] (-) TimerEvent: {}
+[13.154580] (-) TimerEvent: {}
+[13.254858] (-) TimerEvent: {}
+[13.355132] (-) TimerEvent: {}
+[13.455515] (-) TimerEvent: {}
+[13.555923] (-) TimerEvent: {}
+[13.656244] (-) TimerEvent: {}
+[13.697290] (articubot_one) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[13.756377] (-) TimerEvent: {}
+[13.856632] (-) TimerEvent: {}
+[13.956900] (-) TimerEvent: {}
+[14.057307] (-) TimerEvent: {}
+[14.157662] (-) TimerEvent: {}
+[14.257943] (-) TimerEvent: {}
+[14.358311] (-) TimerEvent: {}
+[14.458623] (-) TimerEvent: {}
+[14.558971] (-) TimerEvent: {}
+[14.659224] (-) TimerEvent: {}
+[14.759517] (-) TimerEvent: {}
+[14.859801] (-) TimerEvent: {}
+[14.960313] (-) TimerEvent: {}
+[15.060962] (-) TimerEvent: {}
+[15.161569] (-) TimerEvent: {}
+[15.262184] (-) TimerEvent: {}
+[15.362539] (-) TimerEvent: {}
+[15.462820] (-) TimerEvent: {}
+[15.563228] (-) TimerEvent: {}
+[15.663617] (-) TimerEvent: {}
+[15.763944] (-) TimerEvent: {}
+[15.864196] (-) TimerEvent: {}
+[15.964457] (-) TimerEvent: {}
+[16.064722] (-) TimerEvent: {}
+[16.164931] (-) TimerEvent: {}
+[16.265186] (-) TimerEvent: {}
+[16.365464] (-) TimerEvent: {}
+[16.465855] (-) TimerEvent: {}
+[16.566262] (-) TimerEvent: {}
+[16.666654] (-) TimerEvent: {}
+[16.767044] (-) TimerEvent: {}
+[16.867450] (-) TimerEvent: {}
+[16.967799] (-) TimerEvent: {}
+[17.068064] (-) TimerEvent: {}
+[17.168514] (-) TimerEvent: {}
+[17.268984] (-) TimerEvent: {}
+[17.369353] (-) TimerEvent: {}
+[17.469678] (-) TimerEvent: {}
+[17.570071] (-) TimerEvent: {}
+[17.670339] (-) TimerEvent: {}
+[17.770823] (-) TimerEvent: {}
+[17.871344] (-) TimerEvent: {}
+[17.971661] (-) TimerEvent: {}
+[18.072133] (-) TimerEvent: {}
+[18.173101] (-) TimerEvent: {}
+[18.273451] (-) TimerEvent: {}
+[18.374010] (-) TimerEvent: {}
+[18.474792] (-) TimerEvent: {}
+[18.575628] (-) TimerEvent: {}
+[18.675867] (-) TimerEvent: {}
+[18.776151] (-) TimerEvent: {}
+[18.876404] (-) TimerEvent: {}
+[18.976664] (-) TimerEvent: {}
+[19.076917] (-) TimerEvent: {}
+[19.177161] (-) TimerEvent: {}
+[19.277429] (-) TimerEvent: {}
+[19.377658] (-) TimerEvent: {}
+[19.477965] (-) TimerEvent: {}
+[19.581696] (-) TimerEvent: {}
+[19.681966] (-) TimerEvent: {}
+[19.782256] (-) TimerEvent: {}
+[19.882528] (-) TimerEvent: {}
+[19.982794] (-) TimerEvent: {}
+[20.083056] (-) TimerEvent: {}
+[20.183288] (-) TimerEvent: {}
+[20.283545] (-) TimerEvent: {}
+[20.383861] (-) TimerEvent: {}
+[20.484152] (-) TimerEvent: {}
+[20.584398] (-) TimerEvent: {}
+[20.684636] (-) TimerEvent: {}
+[20.784858] (-) TimerEvent: {}
+[20.885153] (-) TimerEvent: {}
+[20.985580] (-) TimerEvent: {}
+[21.085868] (-) TimerEvent: {}
+[21.186323] (-) TimerEvent: {}
+[21.286727] (-) TimerEvent: {}
+[21.386969] (-) TimerEvent: {}
+[21.487242] (-) TimerEvent: {}
+[21.587518] (-) TimerEvent: {}
+[21.687918] (-) TimerEvent: {}
+[21.788287] (-) TimerEvent: {}
+[21.888704] (-) TimerEvent: {}
+[21.989007] (-) TimerEvent: {}
+[22.089429] (-) TimerEvent: {}
+[22.189811] (-) TimerEvent: {}
+[22.290548] (-) TimerEvent: {}
+[22.391141] (-) TimerEvent: {}
+[22.491646] (-) TimerEvent: {}
+[22.592050] (-) TimerEvent: {}
+[22.692297] (-) TimerEvent: {}
+[22.792729] (-) TimerEvent: {}
+[22.893206] (-) TimerEvent: {}
+[22.993478] (-) TimerEvent: {}
+[23.093726] (-) TimerEvent: {}
+[23.193996] (-) TimerEvent: {}
+[23.294259] (-) TimerEvent: {}
+[23.394618] (-) TimerEvent: {}
+[23.494894] (-) TimerEvent: {}
+[23.595148] (-) TimerEvent: {}
+[23.695389] (-) TimerEvent: {}
+[23.795650] (-) TimerEvent: {}
+[23.895912] (-) TimerEvent: {}
+[23.996162] (-) TimerEvent: {}
+[24.096446] (-) TimerEvent: {}
+[24.196684] (-) TimerEvent: {}
+[24.296913] (-) TimerEvent: {}
+[24.397157] (-) TimerEvent: {}
+[24.497442] (-) TimerEvent: {}
+[24.597674] (-) TimerEvent: {}
+[24.697935] (-) TimerEvent: {}
+[24.798187] (-) TimerEvent: {}
+[24.898449] (-) TimerEvent: {}
+[24.998690] (-) TimerEvent: {}
+[25.031838] (articubot_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[25.098797] (-) TimerEvent: {}
+[25.199033] (-) TimerEvent: {}
+[25.299338] (-) TimerEvent: {}
+[25.399569] (-) TimerEvent: {}
+[25.499868] (-) TimerEvent: {}
+[25.600202] (-) TimerEvent: {}
+[25.700492] (-) TimerEvent: {}
+[25.800813] (-) TimerEvent: {}
+[25.924165] (-) TimerEvent: {}
+[26.024436] (-) TimerEvent: {}
+[26.098343] (articubot_one) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[26.124528] (-) TimerEvent: {}
+[26.224786] (-) TimerEvent: {}
+[26.325046] (-) TimerEvent: {}
+[26.425337] (-) TimerEvent: {}
+[26.525599] (-) TimerEvent: {}
+[26.625853] (-) TimerEvent: {}
+[26.726126] (-) TimerEvent: {}
+[26.826362] (-) TimerEvent: {}
+[26.926608] (-) TimerEvent: {}
+[27.026924] (-) TimerEvent: {}
+[27.127284] (-) TimerEvent: {}
+[27.228102] (-) TimerEvent: {}
+[27.329023] (-) TimerEvent: {}
+[27.429629] (-) TimerEvent: {}
+[27.529936] (-) TimerEvent: {}
+[27.630478] (-) TimerEvent: {}
+[27.730759] (-) TimerEvent: {}
+[27.831019] (-) TimerEvent: {}
+[27.931272] (-) TimerEvent: {}
+[28.031567] (-) TimerEvent: {}
+[28.131951] (-) TimerEvent: {}
+[28.232197] (-) TimerEvent: {}
+[28.332504] (-) TimerEvent: {}
+[28.432773] (-) TimerEvent: {}
+[28.533097] (-) TimerEvent: {}
+[28.633378] (-) TimerEvent: {}
+[28.733679] (-) TimerEvent: {}
+[28.833975] (-) TimerEvent: {}
+[28.934293] (-) TimerEvent: {}
+[29.034596] (-) TimerEvent: {}
+[29.134951] (-) TimerEvent: {}
+[29.235280] (-) TimerEvent: {}
+[29.287834] (articubot_one) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[29.288191] (articubot_one) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[29.288341] (articubot_one) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[29.335428] (-) TimerEvent: {}
+[29.435903] (-) TimerEvent: {}
+[29.444595] (articubot_one) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[29.444862] (articubot_one) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[29.510610] (articubot_one) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[29.535999] (-) TimerEvent: {}
+[29.582474] (articubot_one) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[29.636130] (-) TimerEvent: {}
+[29.648138] (articubot_one) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[29.736264] (-) TimerEvent: {}
+[29.836610] (-) TimerEvent: {}
+[29.856509] (articubot_one) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[29.857293] (articubot_one) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[29.936710] (-) TimerEvent: {}
+[29.966293] (articubot_one) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[30.036913] (-) TimerEvent: {}
+[30.110900] (articubot_one) StdoutLine: {'line': b'-- Configuring done\n'}
+[30.137009] (-) TimerEvent: {}
+[30.237501] (-) TimerEvent: {}
+[30.338168] (-) TimerEvent: {}
+[30.422469] (articubot_one) StdoutLine: {'line': b'-- Generating done\n'}
+[30.424148] (articubot_one) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one\n'}
+[30.427073] (articubot_one) CommandEnded: {'returncode': 0}
+[30.427631] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'build'}
+[30.428479] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/999/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2373,unix/ubuntu:/tmp/.ICE-unix/2373'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb87e982_3a5b_48ec_8c0a_8aa8fd5c50fa'), ('XDG_RUNTIME_DIR', '/run/user/999'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/999/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/999/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/my_bot:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set:/home/ubuntu/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_timer:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_cbg_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_async_client:/home/ubuntu/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/999/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ros2_ws/build/launch_testing_examples:/home/ubuntu/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_executors:/home/ubuntu/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/my_bot:/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set:/home/ubuntu/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_timer:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_cbg_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_async_client:/home/ubuntu/ros2_ws/install/articubot_one:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble')]), 'shell': False}
+[30.438369] (-) TimerEvent: {}
+[30.538979] (-) TimerEvent: {}
+[30.633295] (articubot_one) CommandEnded: {'returncode': 0}
+[30.639170] (-) TimerEvent: {}
+[30.700966] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'install'}
+[30.712108] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one'], 'cwd': '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/999/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2373,unix/ubuntu:/tmp/.ICE-unix/2373'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb87e982_3a5b_48ec_8c0a_8aa8fd5c50fa'), ('XDG_RUNTIME_DIR', '/run/user/999'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/999/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/999/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/my_bot:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set:/home/ubuntu/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_timer:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_cbg_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_async_client:/home/ubuntu/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/999/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ros2_ws/build/launch_testing_examples:/home/ubuntu/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/examples_rclpy_executors:/home/ubuntu/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/my_bot:/home/ubuntu/ros2_ws/install/examples_rclcpp_wait_set:/home/ubuntu/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_timer:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_composition:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclcpp_cbg_executor:/home/ubuntu/ros2_ws/install/examples_rclcpp_async_client:/home/ubuntu/ros2_ws/install/articubot_one:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble')]), 'shell': False}
+[30.723935] (articubot_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.724549] (articubot_one) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[30.725064] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/drive_bot.rviz\n'}
+[30.725316] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/empty.yaml\n'}
+[30.725786] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/gazebo_control.xacro\n'}
+[30.725974] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/inertial_macros.xacro\n'}
+[30.726159] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/lidar.xacro\n'}
+[30.726364] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/robot.urdf.xacro\n'}
+[30.726593] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/robot.urdf.xacro.save\n'}
+[30.726789] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/robot_core.xacro\n'}
+[30.727141] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py\n'}
+[30.727295] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/rsp.launch.py\n'}
+[30.727570] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/worlds/empty.world\n'}
+[30.727724] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/worlds/obstacles.world\n'}
+[30.728017] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one\n'}
+[30.728173] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one\n'}
+[30.728291] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh\n'}
+[30.728547] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv\n'}
+[30.728615] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/path.sh\n'}
+[30.728692] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/path.dsv\n'}
+[30.728813] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.bash\n'}
+[30.728938] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.sh\n'}
+[30.729058] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.zsh\n'}
+[30.729181] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.dsv\n'}
+[30.729273] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/package.dsv\n'}
+[30.739267] (-) TimerEvent: {}
+[30.760471] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/packages/articubot_one\n'}
+[30.760621] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake\n'}
+[30.760699] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake\n'}
+[30.760767] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/package.xml\n'}
+[30.762108] (articubot_one) CommandEnded: {'returncode': 0}
+[30.839466] (-) TimerEvent: {}
+[30.939949] (-) TimerEvent: {}
+[31.040207] (-) TimerEvent: {}
+[31.140496] (-) TimerEvent: {}
+[31.240748] (-) TimerEvent: {}
+[31.280520] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[31.281169] (-) EventReactorShutdown: {}

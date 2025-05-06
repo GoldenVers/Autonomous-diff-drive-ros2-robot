@@ -1,0 +1,52 @@
+[0.494s] Invoking command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one
+[2.006s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.873s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.543s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.135s] -- Added test 'copyright' to check source files copyright and LICENSE
+[16.627s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[16.627s] -- Configured cppcheck include dirs: 
+[16.627s] -- Configured cppcheck exclude dirs and/or files: 
+[16.716s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[16.716s] -- Configured cpplint exclude dirs and/or files: 
+[16.738s] -- Added test 'flake8' to check Python code syntax and style conventions
+[16.777s] -- Added test 'lint_cmake' to check CMake code style
+[16.797s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[16.895s] -- Added test 'uncrustify' to check C / C++ code style
+[16.895s] -- Configured uncrustify additional arguments: 
+[16.921s] -- Added test 'xmllint' to check XML markup files
+[17.051s] -- Configuring done
+[17.259s] -- Generating done
+[17.263s] -- Build files have been written to: /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one
+[17.266s] Invoked command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one
+[17.268s] Invoking command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one -- -j8 -l8
+[17.423s] Invoked command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one -- -j8 -l8
+[17.469s] Invoking command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one
+[17.473s] -- Install configuration: ""
+[17.474s] -- Execute custom install script
+[17.474s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[17.474s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/empty.yaml
+[17.474s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[17.474s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[17.474s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/lidar.xacro
+[17.474s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[17.474s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/worlds/empty.world
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/worlds/obstacles.world
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[17.475s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/path.sh
+[17.476s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/path.dsv
+[17.476s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.bash
+[17.476s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.sh
+[17.476s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.zsh
+[17.476s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.dsv
+[17.476s] -- Symlinking: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/package.dsv
+[17.512s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[17.512s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[17.512s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[17.512s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/package.xml
+[17.515s] Invoked command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/launch_testing_examples:/home/ubuntu/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_service:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_publisher:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_client:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_server:/home/ubuntu/ros2_ws/install/examples_rclpy_minimal_action_client:/home/ubuntu/ros2_ws/install/examples_rclpy_guard_conditions:/home/ubuntu/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one

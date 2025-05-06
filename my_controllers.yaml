@@ -12,7 +12,7 @@ controller_manager:
 diff_cont:
   ros__parameters:
 
-    publish_rate: 30.0
+    publish_rate: 50.0
 
     base_frame_id: base_link
 
@@ -22,6 +22,8 @@ diff_cont:
     wheel_radius: 0.05
 
     use_stamped_vel: false
+
+    enable_odom_tf: false
 
     # open_loop: false    
 
@@ -63,6 +65,11 @@ diff_cont:
 
 
 
+joint_broad:
+  ros__parameters:
 
-# joint_broad:
-#   ros__parameters:
+    map_interface_to_joint_state:
+      effort: effort
+      position: position
+      velocity: velocity
+    use_local_topics: false

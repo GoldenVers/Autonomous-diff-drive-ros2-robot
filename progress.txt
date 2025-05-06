@@ -42,3 +42,60 @@ IRL, the following is used so that you can republish the compressed images as un
 
 this will take the compressed image published by gazebo and then uncompress it to the topic, camera/image_raw/uncompressed 
 useful if you want to send the data, uncompress it over the network and uncompress it on the other end.
+
+
+4/05/2025 and 6/05/2025
+
+the reason there is a gap in the dates compared to before and two days is I got sick, I got bacterial infected and was dying, dont eat from outside much and dont be over stressed!
+
+today we are adding the ros2 control to the system, this is done first by downloading the packages for the ros2 control and the ros2 version and the ros2 control for the gazebo, 
+after that we add the ros2 control hardware setup, this is done by adding the ros2_contorl tags to the urdf file. as usual the original way is to make a separate file and include in the robot.urdf.xacro but this failed miserably 
+for me, the only clue I found was that xacro is not able to include the files other than the main urdf files. 
+anyways, in the urdf file we add the tags for the hardware control,there we specify in the hardware tags what are the joints that are going to be under the ros2 control, which are the wheels joints. 
+then we decide the command interface, which is basically what we are going to control, some robots got their command interface to be the torque, some got velocity and position, for our robot its velocity,
+in the command interface we till ros how much of range we need for the control, for us its from -10 to 10
+
+finally you got the state interface, the command interface is a 'read and write' interface, but the state interface is only a 'read' interface, meaning that we can just read the thing without contorl it, for our case we are
+going to read the position and the velocity of the joints.
+
+finally, the gazebo tags for the ros2 control, basically we tell gazebo that we are using a ros2 control and to read the hardware control tags from the above, this is done by reading the main dish of ros2 contorl, which is the yaml file
+that contains all the parameters for ros2 control.
+
+ the yaml file, which contains all the parameters for the controllers we want to implement, we first start with the controller manager, how much rate we are going to send/recieve the data, what are the controllers. Then after we
+ write the details of each controller we have, for us it is the diff_drive, we specify the publish rate, which should be same as the main controller, then what are the joints that are going to be subjected to the diff drive, 
+ there are bunch of more controllers, but they are not needed to be uncommented nor used for our project. 
+
+ now comes the biggest bug I have met, after I added the controller and wanted to simulate it in gazebo, when I press the keyboard to move, it just jumps chaotically, no restrain, as if it is a tennis ball that is subjected to 
+ ronaldo's kick, just pure chaos.
+
+ I could not really findd the problem, before the controller the robot is okay, after the controller its more uncontrolled than before, I tried to change the controller settings and the parameters but there was no use, I have also 
+ wrote about this issue in the discussion forums, but there is no response obviously.
+
+ the only one who helped me was dr Zaki, my mentor for ros2, he changed the weights and the inertia, he also changed the diff_drive plugin limits, which I didnt really think of, and viola! it is working nice now! 
+
+ the only thing remains for now is that when I open rviz2, it appears like the robot is there in two places at the same time, so it kind of glitches, I dont know the cause, but I will look into it. 
+
+ okay, one thing I have figured out, when I initiate the controllers, the rviz robot starts tweaking out.
+
+ in the video, he upgraded the robot to be the similar to the one in real life, but I grew attached to the current one and the I finaaally fixed everything with it, so I dont think I will changing it.
+
+ okay, done, the problem was rviz was taking tfs at the same time, thus glitching. the solution is quite, turn off the odom tf in the controller yaml file.
+ this is the command :      enable_odom_tf: false
+
+ this will make things stable. 
+
+
+ one more thing I have added, which is recording and listening to the position and the velocity of the joints when the simulation is running, this can be done in two ways. 
+ before anything, the state broadcaster controller is not commented out anymore and thus is able to read the state of the joints.
+ 
+ the first way is just listening to the data, this is done by listening, ros2 topic echo /joint_states 
+
+ this will literally give you the live data for the robot. however it is not professional, as you can just listen. 
+
+ the second way, is to use ros2bag to generate a file containing those data, ros2 bag record /joint_states /odom -o my_robot_data
+
+ this will create the file "my_robot_data" and have the file of the joint_states in it. later on we can just convert to .csv or pdf.
+
+most of the videos are for the hardware, like adding the joysticks and stuff, I am not going to watch it now tbh, but I will watch them later.
+
+ now, it is time for the main dish for this big project, the nav2 and SLAM. 
