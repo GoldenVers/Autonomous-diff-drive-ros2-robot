@@ -99,3 +99,213 @@ that contains all the parameters for ros2 control.
 most of the videos are for the hardware, like adding the joysticks and stuff, I am not going to watch it now tbh, but I will watch them later.
 
  now, it is time for the main dish for this big project, the nav2 and SLAM. 
+
+
+ 12/05/25 
+
+ today I am starting with SLAM, basically I did that yesterday but because the installation for slam took too long, I slept. 
+
+ today, I found a problem while following the video, speaking of the videos, I have watched most of the vids before starting today and they are basically for the real life parts, the only thing that I got interested in was the joystick
+ stuff, but I dont have a joy stick soooo.
+
+ so the problem is was that my robot, in gazebo when it is in origin, it moves to the left, that was weird as I didnt press any key and it was super slow, but I adjusted the weights of the wheels to 5, and it is static now, hopefully it remains.
+
+ now moving on with slam, I am able to generate the slam map (yay)
+
+ but there is a problem, when my robot is moving and everything is okay, it suddenly go two-wheeler, I dont konw why, but it looks ridiculous and it messes up the lidar reading I changed the caster wheel weight, from 00.01 to 0.1 but no use
+ I think of either increase the weight of the chassis and the caster wheel. 
+ 
+ update: it is working just fine, and the map generated in rviz is just, beautiful.
+
+ we started localisation with AMCL
+
+ a note, this needs to be STUDIED, THOROUGHLY.
+
+ it didnt work at first, but in rviz, map node, under topic, change durability policy to transient local
+
+
+ this is pretty tough at the moment, as there something I noticed, I dont have a pre made world in gazebo, which means everytime I run the whole SLAM thing will make it so that I start from scratch, generate images of the map from scratch
+ and so on, so I think it would be better to make a prebuild world then rerun the whole thing.
+
+ aight, luckily for me, I have installed slam and nav2, thus I have the world for slam, the whole grid, I added it, adjusted the location of it, and saved the world, notice: dont delete the robot and then save the world, it will freeze,
+ instead, save it with the bot, then close it and go to the .sdf file and delete the model from there, and in the command, you should add the absolute path of the world. 
+
+ this is the command for running the world : 
+ 
+  ros2 launch articubot_one launch_sim.launch.py world:=/home/ubuntu/ros2_ws/src/articubot_one/worlds/obstacles.world
+
+ now time to continue with our process.
+
+ okay, everything is running pretty smooth and pretty good, there are lots of tabs that we are using, but basically it because we have two algs we run, first is the online_async and the second is the amcl, the Adaptive Monte-Carlo Localizer.
+
+first of, the online_async  which basically means we are making it live data stream instead of recorded logs, and async is for processing the latest scans to ovoid obstacles.
+
+we run our launch command, then rviz annd the teleop_twist_keyboard
+
+then this command : 
+
+ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yaml -p use_sim_time:=true
+
+then this command : 
+
+ros2 run nav2_util lifecycle_bringup map_server
+
+in rviz, we run the robot so that it can make the map of the surroundings, then we add a slam toolbox panel, this appears after installing the nav2 and slam toolbox stuff
+
+we save the map, as well as serialise the map, the first option will create pgm. a pic of the map, and yaml file, the second one is creating a data file and posegraph file, those are usedd in localisation later on.
+
+
+UPDATE: If you're on humble or newer, please note that "params_file" has changed to "slam_params_file". not sure what is that tbh
+okay, this is for the online_async to load the map, I didnt have the issue, even tho it required for humble and above....
+
+
+oh, before that, we need to copy a yaml file from the nav2 stack, this is the commandd for it : 
+cp /opt/ros/humble/share/slam_toolbox/config/mapper_params_online_async.yaml ros2_ws/src/articubot_one/config/
+
+you need to be in your main blank terminnal for that.
+
+then continuiung, after that, we stop the commands, then we change the mapper_params_online_async file, we change the mapping to localisation and then 
+we add the absolute path for the data file, without the extension in it.
+
+then we rerun rviz and gazebo, and in rviz the map should be loaded and ready
+
+localisation and mapping in general is releated to the fact that the rviz and gazebo are in sync, the odom fram is not in sync 
+with the origin, thus inaccurate, but we have to use basae_footprint, then in the nav2 yaml file it takes, that is a 
+joint on top of the base link that doesnt do much. 
+
+AMCL 
+
+
+now with amcl, same procedure, in nav2 so far you need two main commands : 
+
+ros2 launch slam_toolbox online_async_launch.py  params_file:=./src/articubot_one/config/mapper_params_online_async.yaml use_sim_time:=true
+
+then 
+
+ ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yaml -p use_sim_time:=true 
+
+ then 
+
+ ros2 run nav2_util lifecycle_bringup amcl 
+
+
+or with the asml
+
+ros2 run nav2_amcl amcl --ros-args -p use_sim_time:=true
+
+then 
+ros2 run nav2_util lifecycle_bringup amcl 
+
+
+
+all that while rviz2 is running
+
+for me, the online_async is betterr than amcl, its much more smoother.
+
+---------------------------------------------------------------------------------------------
+
+done.  [^_^]
+
+
+
+so far, nav2 is kinda easy, just a lot to run at the same time.
+
+I had two problems : 
+
+problem 1: I have copied the localisation and navigation files from both the slam_toolbox and nav2 files, this is so that I can run them using articubot_one name, but it didnt work, it cant find the files
+problem 2: I have added the joystick file, but when I added it to the launch file, it didnt work, and crashed, so I removed it from the launch file but the files and node for launch are there.
+
+both the problems pose to issue to me, as the robot and the nav2 stack is able to run smoothly. just with more bit of a work than usual.
+
+
+now, time to start the development process.
+
+nav2, we need some installations to do, which is twist_mux, this is a node where it can take multiple cmd velocity and give out a single one, for this project it is 
+made into a joystick and cmd_vel
+
+then we add the yaml file for it, copy it from github, it had priority joystick 100 which is top priority and navigationn topic which is 10
+
+then we go workspace and run this 
+
+
+ros2 run twist_mux twist_mux --ros-args --params-file /home/ubuntu/ros2_ws/src/articubot_one/config/twist_mux.yaml -r cmd_vel_out:=diff_cont/cmd_vel_unstamped
+
+of course we run also gazebo and rviz2
+
+gazebo command: 
+
+ros2 launch articubot_one launch_sim.launch.py world:=/home/ubuntu/ros2_ws/src/articubot_one/worlds/obstacles.world
+
+teleop_twist_keyboard command :
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
+
+
+
+
+then we run slam_toolbox  using this command 
+
+ros2 launch slam_toolbox online_async_launch.py  slam_params_file:=./src/articubot_one/config/mapper_params_online_async.yaml use_sim_time:=true
+
+this is the same toolbox command from before, this is so that we can make a map, we can either load it or make the map oursellves.
+
+
+of course dont forget to run the teleop_twist_keyboard command 
+
+then in a new tab, we run the nav2 package using this 
+
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+
+then, in rviz, we add a new map, and set the topic to global_costmap/costmap and the color to costmap. and you get the map 
+
+then we press 2d goal pose, and press anywhere in the map, and it goes there....
+
+when you take over with the keyboard it lets you do it. 
+
+ ladies and gentlemen, this is nav2.
+
+
+
+
+
+
+
+
+
+ now with the AMCL 
+
+ we follow the same steps from before, till the twist_mux and teleop_twist_keyboard then instead of the slam_toolbox we run  this instead
+
+ros2 launch nav2_bringup localization_launch.py map:=/home/ubuntu/ros2_ws/src/articubot_one/my_map_save.yaml use_sim_time:=true
+
+ we set the inital pose in rviz2, which is the fixed frame btw, to map. specify the 2d pose estimate
+
+ then add the map with all the settings from before, keep the topic same, map.
+
+
+after we run the commands we also run this command 
+
+ros2 launch articubot_one navigation_launch.py use_sim_time:=true map_subscribe_transient_local:=true
+
+this is for nav2 to start up and see the map
+
+in rviz we do the smae thing in map. 
+
+
+now try adding a cube in front of the robot, ofcourse make it smaller to it can fit the area, you see the map in rviz update in real time that it came in.
+
+
+use 2d goal pose and then select somewhere you want to go to, it will work.
+
+================================================================================================================================================================
+================================================================================================================================================================
+
+
+this is it, this project is unofficialy done, the only left are the camera, but nav2 is added to the robot. 
+
+total time : around 3 months 
+
+this was a journey, literally was feeling bad when I finished the video, well not bad, just empty....
+
+
+(/≧▽≦)/ 
