@@ -1,4 +1,4 @@
-🧠 ROS2 Navigation & SLAM Simulation Project
+## 🧠 ROS2 Navigation & SLAM Simulation Project
 This a journey of me following the tutorial of articulated robotics to create a mobile robot. this is here is a full ROS2-based mobile robot simulation project built with blood,sweat,tears, curiosity, and late-night bug hunting.
 
 Note: please go to the latest branch for the latest code
