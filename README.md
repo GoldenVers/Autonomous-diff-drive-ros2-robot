@@ -4,6 +4,30 @@ This a journey of me following the tutorial of articulated robotics to create a 
 Note: please go to the latest branch for the latest code
 Latest branch : nav2_and_slam
 
+
+
+## PROJECT SUMMARY
+
+• 🛠️ **Simulation Framework**: Gazebo (Classic) for realistic physics and environment simulation  
+• 🧠 **Middleware**: ROS2 Humble, utilizing ros2_control and Navigation2 stack  
+• 🗺️ **SLAM & Navigation**: Integrated SLAM Toolbox for autonomous map creation and Nav2 for obstacle-aware goal planning  
+• 🧭 **Teleoperation**: Controlled wirelessly via keyboard, phone, or autonomous navigation  
+• 👀 **Sensors & Perception**: Equipped with LIDAR, RGB Camera, and Depth Camera—used for SLAM, vision, and obstacle detection  
+• 🔧 **Controllers**: Implemented diff_drive_controller with fine-tuned limits for stability and realistic robot movement as well as joint_state_broadcaster controller for sending the joints details, like the odometry and the velocity.
+• 🔄 **Transform Broadcasting**: Handled properly using tf2 and robot_state_publisher  
+• 📦 **Modular Architecture**: Built using URDF/XACRO and organized with launch files and config packages
+
+
+
+## ⌛Timeline of the project
+
+✅ Feb 2025: Initial URDF robot built and tested in Gazebo  
+✅ Mar 2025: Integrated ros2_control with diff_drive_controller  
+✅ Apr 2025: Implemented SLAM Toolbox and visualized data in RViz2  
+✅ May 2025: Deployed full Navigation2 stack with local and global planners  
+✅ Ongoing: Integration with camera and OpenCV for object detection
+
+
 ## 🛠️ Project Overview
 This project simulates a differential drive robot in a Gazebo world using ROS2 (Humble). The aim is to develop a simulated robot that can:
 
@@ -56,3 +80,10 @@ Make sure to build the workspace and source the overlay before launching!
 cd ~/ros2_ws
 colcon build --symlink-install
 source install/setup.bash
+
+
+
+## Looking ahead
+
+🚀 Next Phase: Object Detection + Robotic Arm Integration with UR10 using MoveIt2 and OpenCV  
+🤝 Open to internship collaborations and robotics research opportunities  
