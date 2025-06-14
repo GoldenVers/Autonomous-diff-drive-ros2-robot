@@ -1,0 +1,60 @@
+[0.308s] Invoking command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one
+[1.158s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.529s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.126s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.122s] -- Added test 'copyright' to check source files copyright and LICENSE
+[26.235s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[26.235s] -- Configured cppcheck include dirs: 
+[26.235s] -- Configured cppcheck exclude dirs and/or files: 
+[26.332s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[26.332s] -- Configured cpplint exclude dirs and/or files: 
+[26.359s] -- Added test 'flake8' to check Python code syntax and style conventions
+[26.424s] -- Added test 'lint_cmake' to check CMake code style
+[26.506s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[26.608s] -- Added test 'uncrustify' to check C / C++ code style
+[26.608s] -- Configured uncrustify additional arguments: 
+[26.626s] -- Added test 'xmllint' to check XML markup files
+[26.756s] -- Configuring done
+[26.958s] -- Generating done
+[26.961s] -- Build files have been written to: /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one
+[26.965s] Invoked command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one
+[26.969s] Invoking command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one -- -j8 -l8
+[27.074s] Invoked command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one -- -j8 -l8
+[27.157s] Invoking command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one
+[27.162s] -- Install configuration: ""
+[27.163s] -- Execute custom install script
+[27.163s] -- Symlinking: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml
+[27.169s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[27.169s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/empty.yaml
+[27.169s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml
+[27.169s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/nav2_params.yaml
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/twist_mux.yaml
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/lidar.xacro
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/joystick.launch.py
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/localization_launch.py
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/navigation_launch.py
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/online_async_launch.py
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[27.170s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/worlds/empty.world
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/worlds/obstacles.world
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/path.sh
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/environment/path.dsv
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.bash
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.sh
+[27.171s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.zsh
+[27.172s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/local_setup.dsv
+[27.172s] -- Symlinking: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/package.dsv
+[27.177s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[27.177s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[27.178s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[27.178s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/package.xml
+[27.179s] Invoked command in '/home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/src/articubot_one/build/articubot_one

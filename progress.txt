@@ -309,3 +309,18 @@ this was a journey, literally was feeling bad when I finished the video, well no
 
 
 (/≧▽≦)/ 
+
+
+
+
+02/06/25
+
+
+
+Im finally able to do this again, I could not continue the development last week due to me going to the embassy on monday and thus it made it hard on me to use ubuntu because it is too slow
+
+
+
+for today, I finally fixed the issue that has been nagging with me, the ball_tracker package that is used was not used properly with the colconn build, for that to change, you have to change the config file in the package and change
+the - to _
+

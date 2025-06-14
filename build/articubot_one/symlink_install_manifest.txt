@@ -1,3 +1,4 @@
+/home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml
 /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/drive_bot.rviz
 /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/empty.yaml
 /home/ubuntu/ros2_ws/src/articubot_one/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml

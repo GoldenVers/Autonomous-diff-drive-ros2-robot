@@ -225,10 +225,10 @@
 
     <!--CAMERA-->
 
-     <!-- <joint name="camera_joint" type="fixed">
+     <joint name="camera_joint" type="fixed">
         <parent link="chassis"/>
         <child link="camera_link"/>
-        <origin xyz="0.305 0 0.08" rpy="0 0 0"/>
+        <origin xyz="0.305 0 0.08" rpy="0 0.18 0"/>
     </joint>
 
     <link name="camera_link">
@@ -274,11 +274,11 @@
                 <frame_name>camera_link_optical</frame_name>
             </plugin>
         </sensor>
-    </gazebo> -->
+    </gazebo> 
 
     <!--DEPTH CAMERA-->
 
-
+<!--
      <joint name="camera_joint" type="fixed">
         <parent link="chassis"/>
         <child link="camera_link"/>
@@ -331,7 +331,7 @@
             </plugin>
         </sensor>
     </gazebo>
-
+-->
     <!--gazebo ros2 control and ros2 control itself-->
 
    <ros2_control name="GazeboSystem" type="system">
