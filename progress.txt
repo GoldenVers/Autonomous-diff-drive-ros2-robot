@@ -324,3 +324,34 @@ Im finally able to do this again, I could not continue the development last week
 for today, I finally fixed the issue that has been nagging with me, the ball_tracker package that is used was not used properly with the colconn build, for that to change, you have to change the config file in the package and change
 the - to _
 
+also added the object tracking, using opencv, this is done by runnning the ball_tracker packge and then in rviz we adjusted the settings such as the saturation and hue to detect the  yellow ball, after that we run another package
+first we run 
+ros2 run ball_tracker follow_ball --ros-args -r cmd_vel:=cmd_vel_tracker 
+
+then the robot follows the ball aannd starts looking for it
+
+the problem I faced that the moment it finds it it acts weird, like goes around it or keeps rotating, but it is working and I think the problem could the ball is not big enough.
+
+
+I recommend to learn more about object tracking and detection by yourself, as we are just using packages and not really doing anything, if you want to learn and understand more about ROS2 then go from the fundamentals rather than just followin the tutorials
+
+this project/tutorial is a treasure, but I would say its for the beginners, after this tutorial you should be able to understand ROS2 and its communications. it would be the best to start new project on your own, and not just fall in the tutorial hell. 
+
+================================================================================================================================================================
+================================================================================================================================================================
+
+
+the project is done. it was pleasure, reaching this far and finally finished the project that literally changed my life, I got the internship that I want from this project, my views on robotic as a mechatronics engineering changed when I leared about this ROS framework. 
+
+I hope now I get more and more with the framework and somehow make money from it lmao. 
+
+Dear future reader, who came this far, I hope you are benefitted by reaading this yapping file, and I hope for you a fruitful and adventurous journey in robotics like what I had. 
+
+I plan to make a video (a youtube channel first) about this project, just taalking or explaining things here and there, but I find it hard considering the fact this project has been done on a usb installer and not aactuall hard drive, which makes it extremely slow. but for future project or yapping about the project, inshallah soon. 
+
+For the next project, its going to be robotic manipulator, aa UR10 6 dof robotic arm program for object identificaation and traacking, wish me luck! 
+
+See you in the next repo!
+
+Youssef Elsayed, 
+GoldenVers
