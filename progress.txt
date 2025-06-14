@@ -351,6 +351,8 @@ I plan to make a video (a youtube channel first) about this project, just taalki
 
 For the next project, its going to be robotic manipulator, aa UR10 6 dof robotic arm program for object identificaation and traacking, wish me luck! 
 
+Hope you enjoyed the nav2 journey!
+
 See you in the next repo!
 
 Youssef Elsayed, 
